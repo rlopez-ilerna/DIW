@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 4 - Validación Avanzada</title>
+  
+    <script src="../jquery-4.0.0.min.js"></script>
+    <script src="script.js"></script>
+
+      <style>
+    .error {
+      color: red;
+    }
+    input, button {
+      display: block;
+      margin-top: 5px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>Formulario de Contacto</h1>
+  <form id="contactForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <span id="emailError" class="error"></span>
+
+    <button type="submit" id="enviar" disabled>Enviar</button>
+  </form>
+
+</body>
+</html>
