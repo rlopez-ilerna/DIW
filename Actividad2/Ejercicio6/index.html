@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6 - Validación de Formulario</title>
+
+    <script src="../jquery-4.0.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Formulario</h2>
+
+<form id="miFormulario">
+
+    <label>Email:</label>
+    <input type="text" id="email">
+    <div class="error" id="errorEmail"></div>
+
+    <label>Contraseña:</label>
+    <input type="password" id="password">
+    <div class="error" id="errorPassword"></div>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+</body>
+</html>

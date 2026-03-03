@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 - Tabs</title>
+
+    <script src="../jquery-4.0.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        .tab {
+            padding: 10px 15px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+
+        .activa {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .contenido {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Ejercicio 2 - Navegación por Pestañas</h1>
+
+<!-- Botones -->
+<div id="tabs">
+    <div class="tab activa" data-tab="0">Pestaña 1</div>
+    <div class="tab" data-tab="1">Pestaña 2</div>
+    <div class="tab" data-tab="2">Pestaña 3</div>
+</div>
+
+<!-- Contenido -->
+<div id="contenidos">
+    <div class="contenido">Contenido de la Pestaña 1</div>
+    <div class="contenido">Contenido de la Pestaña 2</div>
+    <div class="contenido">Contenido de la Pestaña 3</div>
+</div>
+
+</body>
+</html>

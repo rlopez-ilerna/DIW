@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3 - Modal</title>
+
+    <script src="../jquery-4.0.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Overlay oscuro */
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        /* Caja modal */
+        #modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+        }
+
+        #modal button {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Ejercicio 3 - Ventana Modal</h1>
+
+<button id="btnAbrir">Abrir Modal</button>
+
+<!-- Overlay -->
+<div id="overlay"></div>
+
+<!-- Modal -->
+<div id="modal">
+    <p>Este es el contenido de la ventana modal.</p>
+    <button id="btnCerrar">Cerrar</button>
+</div>
+
+</body>
+</html>

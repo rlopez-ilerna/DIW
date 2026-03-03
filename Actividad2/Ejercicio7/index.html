@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7 - Acordeón FAQ</title>
+
+    <script src="../jquery-4.0.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 600px;
+            margin: 50px auto;
+        }
+
+        h3 {
+            background: #333;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        .respuesta {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Preguntas Frecuentes</h2>
+
+<div class="faq">
+
+    <h3>¿Qué es jQuery?</h3>
+    <div class="respuesta">
+        jQuery es una librería de JavaScript que simplifica la manipulación del DOM.
+    </div>
+
+    <h3>¿Qué es un evento?</h3>
+    <div class="respuesta">
+        Es una acción que ocurre en la página, como un clic o un scroll.
+    </div>
+
+    <h3>¿Qué es un acordeón?</h3>
+    <div class="respuesta">
+        Es un componente donde solo un contenido puede estar abierto al mismo tiempo.
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4 - Sticky Header</title>
+
+    <script src="../jquery-4.0.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Imagen grande de cabecera */
+        .cabecera {
+            height: 300px;
+            background: url("https://picsum.photos/1200/300") no-repeat center;
+            background-size: cover;
+        }
+
+        /* Barra de navegación */
+        #menu {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        #menu a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        /* Clase que lo hace fijo */
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Contenido largo */
+        .contenido {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cabecera"></div>
+
+<div id="menu">
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
+</div>
+
+<div class="contenido">
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+    <p>(Repite este texto muchas veces para generar scroll)</p>
+</div>
+
+</body>
+</html>

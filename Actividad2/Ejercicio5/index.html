@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5 - Filtro de Galería</title>
+
+    <script src="../jquery-4.0.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .filtros button {
+            margin: 5px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Galería con Filtro</h1>
+
+<!-- Botones filtro -->
+<div class="filtros">
+    <button data-filtro="todos">Todos</button>
+    <button data-filtro="naturaleza">Naturaleza</button>
+    <button data-filtro="tecnologia">Tecnología</button>
+    <button data-filtro="coches">Coches</button>
+</div>
+
+<!-- Galería -->
+<div class="galeria">
+
+    <div class="item" data-categoria="naturaleza">
+        <img src="https://picsum.photos/400/300?random=1">
+    </div>
+
+    <div class="item" data-categoria="naturaleza">
+        <img src="https://picsum.photos/400/300?random=2">
+    </div>
+
+    <div class="item" data-categoria="tecnologia">
+        <img src="https://picsum.photos/400/300?random=3">
+    </div>
+
+    <div class="item" data-categoria="tecnologia">
+        <img src="https://picsum.photos/400/300?random=4">
+    </div>
+
+    <div class="item" data-categoria="coches">
+        <img src="https://picsum.photos/400/300?random=5">
+    </div>
+
+    <div class="item" data-categoria="coches">
+        <img src="https://picsum.photos/400/300?random=6">
+    </div>
+
+</div>
+
+</body>
+</html>
